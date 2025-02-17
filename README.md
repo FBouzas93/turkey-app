@@ -27,42 +27,24 @@ This project is a turkey racing simulator built with Laravel. Turkeys have diffe
    php artisan key:generate
    ```
 
-4. Set up the database in the `.env` file:
-   ```ini
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=turkey_app
-   DB_USERNAME=root
-   DB_PASSWORD=
-   ```
-
-5. Run migrations and seeders:
+4. Run migrations and seeders:
    ```sh
    php artisan migrate --seed
    ```
 
-6. Start the development server:
+5. Start the development server:
    ```sh
    php artisan serve
    ```
 
 ## Usage
 
-### Simulating a Race
+### Main page
 
-To start a race, access the following route:
+To go the main page following route:
 ```
-GET /race/start
+http://127.0.0.1:8000/race/start
 ```
-This will execute the calculation logic and display the results in the `race.results` view.
-
-## Project Structure
-
-### Models
-
-- `Turkey`: Represents each turkey with attributes such as `weight`, `age`, `status`, and `ability`.
-- `Ability`: Defines race strategies.
 
 ### Race Logic
 
